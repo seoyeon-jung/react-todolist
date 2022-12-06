@@ -22,8 +22,16 @@ const TodoInput = ({ onAdd }) => {
 
   return (
     <form className="TodoInput" onSubmit={onSubmit}>
-      <input type="text" value={text} onChange={changeInput} ref={textRef} />
-      <button type="submit">추가하기</button>
+      <input
+        className="inputText"
+        type="text"
+        value={text}
+        onChange={changeInput}
+        ref={textRef}
+      />
+      <button className="submitBtn" type="submit">
+        추가하기
+      </button>
     </form>
   );
 };

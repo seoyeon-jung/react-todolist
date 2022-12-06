@@ -5,9 +5,13 @@ const TodoItem = ({ item, onToggle, onDel }) => {
 
   return (
     <li className={check ? `on` : ""}>
-      <span onClick={() => onToggle(id)}>&#10003;</span>
-      <em>{text}</em>
-      <button onClick={() => onDel(id)}>&#10799;</button>
+      <span className="done" onClick={() => onToggle(id)}>
+        &#10003;
+      </span>
+      <em className="text">{text}</em>
+      <button className="delBtn" onClick={() => onDel(id)}>
+        &#10799;
+      </button>
     </li>
   );
 };

@@ -36,7 +36,7 @@ const Todos = () => {
   // TodoInput => onAdd / TodoList => todo객체, onToggle, onDel
   return (
     <div className="Todos">
-      <h1>To do List</h1>
+      <h1 className="header">To do List</h1>
       <TodoInput onAdd={onAdd} />
       <TodoList todo={todo} onToggle={onToggle} onDel={onDel} />
     </div>

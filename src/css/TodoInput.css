@@ -1,0 +1,24 @@
+.TodoInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputText {
+  width: 600px;
+  height: 15px;
+  padding: 7px;
+  margin-right: 30px;
+}
+
+.submitBtn {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(132, 149, 250);
+  color: white;
+  padding: 7px;
+}
+
+.submitBtn:hover {
+  transform: scale(1.2);
+}
