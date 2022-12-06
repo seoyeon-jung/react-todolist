@@ -16,17 +16,18 @@ const Todos = () => {
   const onToggle = (id) => {
     setTodo(
       todo.map((item) =>
-        item.id === id ? { ...item, check: item.check } : item
+        item.id === id ? { ...item, check: !item.check } : item
       )
     );
   };
 
   // add : input 에서 입력받은 값을 새로운 item으로 추가
-  const onAdd = (text) => {
+  const onAdd = (title, text) => {
     setTodo([
       ...todo,
       {
         id: no.current++, // id값은 증가힐수록 ++
+        title,
         text,
         check: false,
       },
