@@ -13,7 +13,7 @@
 ## 완성된 페이지
 - [오늘 뭐하지?🤔](https://react-todolist-tau.vercel.app/) << 페이지 클릭!
 - 실제 구현 모습 <br>
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/95006849/206114634-4eea2111-7f9e-4e14-81fc-33cecca4b77f.gif)
+![오늘-뭐하지__-Chrome-2022-12-07-16-03-08](https://user-images.githubusercontent.com/95006849/206125248-644dd70b-3d1b-4bea-9fd1-aedaf2d9b849.gif)
 <br>
 <br>
 
