@@ -13,24 +13,23 @@ const TodoInput = ({ onAdd }) => {
   };
 
   const changeTitleInput = (e) => {
-    const { value_title } = e.target;
-    setTitle(value_title);
+    const { value } = e.target;
+    setTitle(value);
   };
 
   const onSubmit = (e) => {
     e.preventDefault(); // 새로고침 방지
 
-    if (!text && !title) return; // 입력칸 공백 방지
+    if (!text || !title) return; // 입력칸 공백 방지
 
-    onAdd(text);
-    onAdd(title);
+    onAdd(title, text);
     setText(""); // 입력 후 다시 공백으로
     setTitle("");
     // textRef.current.focus();
   };
 
   return (
-    <form className="TodoInput" onSubmit={onSubmit}>
+    <form className="TodoInput">
       <input
         className="inputText"
         type="text"
@@ -47,7 +46,7 @@ const TodoInput = ({ onAdd }) => {
         ref={textRef}
         placeholder="내용"
       />
-      <button className="submitBtn" type="submit">
+      <button className="submitBtn" type="submit" onClick={onSubmit}>
         추가하기
       </button>
     </form>

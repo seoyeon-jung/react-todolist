@@ -23,6 +23,7 @@ const Todos = () => {
 
   // add : input 에서 입력받은 값을 새로운 item으로 추가
   const onAdd = (title, text) => {
+    console.log(title, text);
     setTodo([
       ...todo,
       {
