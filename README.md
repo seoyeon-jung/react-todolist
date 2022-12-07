@@ -28,4 +28,16 @@
 
 
 ## Error Log
-1. (1206) Todo 추가 시, 제목+내용 input 내용이 사라지며 List 생성되는 오류
+1. Todo 추가 시, 제목+내용 input 내용이 list에 나오지 않는 오류 발생
+![화면 캡처 2022-12-07 102008](https://user-images.githubusercontent.com/95006849/206065033-b48c44e1-4ec9-4560-bb63-3e4bed8b33bc.png)
+<br>event.target : target 속성은 이벤트가 발생한 대상 객체를 가리킨다
+<br>=> e.target을 존재하지 않는 속성을 넣어서 아예 작동이 되지 않았다. (value_title은 내가 멋대로 만들어냈기 때문에 event가 발생하지 않는다.
+<br>=> event.target & 구조 분해 할당에 대한 부족한 이해 때문에 발생한 오류 (해결 완료!)
+
+- 이벤트 발생 과정
+1. 지정된 event target(html 요소)에
+2. 지정된 event type이 발생하면
+3. 지정된 event handler가 실행된다
+
+- 구조 분해 할당
+배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 표현식
