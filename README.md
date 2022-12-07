@@ -55,3 +55,18 @@
           {check ? <>취소</> : <>완료</>}
  </button>
 ```
+
+3. 진행중 / 완료 범위 나누기 관련 오류
+- `TodoList.js` 에서 list를 받아올 때 조건 하나 더 추가
+- `item.check === check` << 이 조건을 만족하면 TodoItem을 불러오는 것으로 해결 완료
+
+```javascript
+<ul className="TodoList">
+      {todo.map(
+        (item) =>
+          item.check === check && (
+            <TodoItem key={item.id} item={item} onToggle={onToggle} onDel={onDel} />
+          )
+      )}
+ </ul>
+```
