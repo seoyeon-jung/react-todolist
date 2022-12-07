@@ -1,5 +1,5 @@
 # React로 TodoList 만들기
-### 2022.12.05 ~
+### 2022.12.05 ~ 2022.12.07
 - React로 TodoList 만들기
 - 내일배움캠프 4기 리액트 입문과정 개인 과제
 <br>
@@ -7,6 +7,13 @@
 
 ## 사용한 기술 스택  
 <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<br>
+<br>
+
+## 완성된 페이지
+- https://react-todolist-tau.vercel.app/ << 페이지 클릭!
+- 실제 구현 모습
+![오늘-뭐하지__-Chrome-2022-12-07-14-45-00](https://user-images.githubusercontent.com/95006849/206099048-69e5f793-835c-41bc-9aad-41e0567d6049.gif)
 <br>
 <br>
 
@@ -18,12 +25,16 @@
 	- 삭제 버튼 클릭하면 todo 삭제
 3. todo 완료-진행중 상태변경하기
 	- 완료-취소 버튼 toggle : isDone 상태가 true이면 label=취소 / false이면 label=완료
-4. Working 이면 위쪽 / Done 이면 아래쪽에 위치
+4. Working 이면 위쪽 / Done 이면 아래쪽에 위치 (1207 아직 구현 못함)
 5. Layout 최대 넓이 1200px / 최소 넓이 800px (전체 화면 가운데 정렬)
 6. 분리한 컴포넌트를 ReadMe에 정리
 <br>
 <br>
 
+## 폴더 구조
+![image](https://user-images.githubusercontent.com/95006849/206099853-5d57fdc8-145d-4a1d-baa8-f036debbc68b.png)
+<br>
+<br>
 ## Error Log
 1. Todo 추가 시, 제목+내용 input 내용이 list에 나오지 않는 오류 발생
 ![화면 캡처 2022-12-07 102008](https://user-images.githubusercontent.com/95006849/206065033-b48c44e1-4ec9-4560-bb63-3e4bed8b33bc.png)
