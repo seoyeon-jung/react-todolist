@@ -1,12 +1,20 @@
 import TodoItem from "./TodoItem";
 import "../css/TodoList.css";
 
-const TodoList = ({ todo, onToggle, onDel }) => {
+const TodoList = ({ todo, onToggle, onDel, check }) => {
   return (
     <ul className="TodoList">
-      {todo.map((item) => (
-        <TodoItem key={item.id} item={item} onToggle={onToggle} onDel={onDel} />
-      ))}
+      {todo.map(
+        (item) =>
+          item.check === check && (
+            <TodoItem
+              key={item.id}
+              item={item}
+              onToggle={onToggle}
+              onDel={onDel}
+            />
+          )
+      )}
     </ul>
   );
 };

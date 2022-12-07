@@ -39,7 +39,14 @@ const Todos = () => {
     <div className="Todos">
       <h1 className="header">오늘 뭐하지?🤔</h1>
       <TodoInput onAdd={onAdd} />
-      <TodoList todo={todo} onToggle={onToggle} onDel={onDel} />
+      <div className="todoworking">
+        <h2>진행 중</h2>
+        <TodoList check={false} todo={todo} onToggle={onToggle} onDel={onDel} />
+      </div>
+      <div className="todoDone">
+        <h2>완료</h2>
+        <TodoList check={true} todo={todo} onToggle={onToggle} onDel={onDel} />
+      </div>
     </div>
   );
 };

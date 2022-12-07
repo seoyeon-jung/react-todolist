@@ -1,6 +1,6 @@
 .Todos {
   width: 800px;
-  height: 1000px;
+  height: 1500px;
   background-color: rgb(149, 202, 248);
   text-align: center;
   margin: 0 auto;
@@ -11,4 +11,33 @@
   text-align: center;
   color: #fff;
   font-size: 50px;
+}
+
+.todoworking {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+
+.todoworking::-webkit-scrollbar {
+  display: none;
+}
+
+.todoDone {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  background-color: rgb(227, 242, 254);
+  border-radius: 20px;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+.todoDone::-webkit-scrollbar {
+  display: none;
 }
