@@ -23,7 +23,6 @@ const Todos = () => {
 
   // add : input 에서 입력받은 값을 새로운 item으로 추가
   const onAdd = (title, text) => {
-    console.log(title, text);
     setTodo([
       ...todo,
       {
@@ -38,7 +37,7 @@ const Todos = () => {
   // TodoInput => onAdd / TodoList => todo객체, onToggle, onDel
   return (
     <div className="Todos">
-      <h1 className="header">To do List</h1>
+      <h1 className="header">오늘 뭐하지?🤔</h1>
       <TodoInput onAdd={onAdd} />
       <TodoList todo={todo} onToggle={onToggle} onDel={onDel} />
     </div>

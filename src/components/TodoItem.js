@@ -5,14 +5,18 @@ const TodoItem = ({ item, onToggle, onDel }) => {
 
   return (
     <li className={check ? `on` : ""}>
-      <span className="done" onClick={() => onToggle(id)}>
-        &#10003;
-      </span>
-      <em className="text">{title}</em>
-      <em className="text">{text}</em>
-      <button className="delBtn" onClick={() => onDel(id)}>
-        &#10799;
-      </button>
+      <div className="todoBox">
+        <div>
+          <h3 className="title">{title}</h3>
+          <p>{text}</p>
+        </div>
+        <button className="done" onClick={() => onToggle(id)}>
+          {check ? <>취소</> : <>완료</>}
+        </button>
+        <button className="delBtn" onClick={() => onDel(id)}>
+          삭제
+        </button>
+      </div>
     </li>
   );
 };

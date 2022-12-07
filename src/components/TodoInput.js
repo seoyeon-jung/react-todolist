@@ -23,9 +23,8 @@ const TodoInput = ({ onAdd }) => {
     if (!text || !title) return; // 입력칸 공백 방지
 
     onAdd(title, text);
-    setText(""); // 입력 후 다시 공백으로
     setTitle("");
-    // textRef.current.focus();
+    setText(""); // 입력 후 다시 공백으로
   };
 
   return (
