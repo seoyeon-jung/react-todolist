@@ -11,9 +11,9 @@
 <br>
 
 ## 완성된 페이지
-- https://react-todolist-tau.vercel.app/ << 페이지 클릭!
-- 실제 구현 모습
-![오늘-뭐하지__-Chrome-2022-12-07-14-45-00](https://user-images.githubusercontent.com/95006849/206099048-69e5f793-835c-41bc-9aad-41e0567d6049.gif)
+- [오늘 뭐하지?🤔](https://react-todolist-tau.vercel.app/) << 페이지 클릭!
+- 실제 구현 모습 <br>
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/95006849/206114634-4eea2111-7f9e-4e14-81fc-33cecca4b77f.gif)
 <br>
 <br>
 
@@ -25,9 +25,7 @@
 	- 삭제 버튼 클릭하면 todo 삭제
 3. todo 완료-진행중 상태변경하기
 	- 완료-취소 버튼 toggle : isDone 상태가 true이면 label=취소 / false이면 label=완료
-4. Working 이면 위쪽 / Done 이면 아래쪽에 위치 (1207 아직 구현 못함)
-5. Layout 최대 넓이 1200px / 최소 넓이 800px (전체 화면 가운데 정렬)
-6. 분리한 컴포넌트를 ReadMe에 정리
+4. Working 이면 위쪽 / Done 이면 아래쪽에 위치
 <br>
 <br>
 
