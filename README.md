@@ -1,5 +1,5 @@
 # React로 TodoList 만들기
-### 2022.12.05 ~
+### 2022.12.05 ~ 2022.12.07
 - React로 TodoList 만들기
 - 내일배움캠프 4기 리액트 입문과정 개인 과제
 <br>
@@ -10,23 +10,31 @@
 <br>
 <br>
 
+## 완성된 페이지
+- https://react-todolist-tau.vercel.app/ << 페이지 클릭!
+- 실제 구현 모습
+![오늘-뭐하지__-Chrome-2022-12-07-14-45-00](https://user-images.githubusercontent.com/95006849/206099048-69e5f793-835c-41bc-9aad-41e0567d6049.gif)
+<br>
+<br>
+
 ## Features
-- UI 구현하기 (1206 완료)
-- Todo 추가 하기 (1206 input이 하나이면 추가 가능 / 제목+내용 시 추가 X)
-- Todo 삭제 하기 (1206 완료)
-- Todo 완료 상태 변경하기 (완료 ↔ 진행중)
+1. todo 추가하기
+	- 제목/내용 입력 후 [추가하기] 버튼 클릭하면 추가
+	- todo 추가 후 제목/내용 input은 다시 빈 값으로 바뀌도록 구성
+2. todo 삭제하기
+	- 삭제 버튼 클릭하면 todo 삭제
+3. todo 완료-진행중 상태변경하기
+	- 완료-취소 버튼 toggle : isDone 상태가 true이면 label=취소 / false이면 label=완료
+4. Working 이면 위쪽 / Done 이면 아래쪽에 위치 (1207 아직 구현 못함)
+5. Layout 최대 넓이 1200px / 최소 넓이 800px (전체 화면 가운데 정렬)
+6. 분리한 컴포넌트를 ReadMe에 정리
 <br>
 <br>
 
-## Requirements
-1. 제목과 내용을 입력하고, [추가하기] 버튼을 클릭하면 Working에 새로운 Todo가 추가되고 제목 input과 내용 input은 다시 빈 값으로 바뀌도록 구성해주세요.
-2. Todo의 **isDone 상태가 true이면, 상태 버튼의 라벨을 `취소`, isDone이 false 이면 라벨을 `완료`** 로 조건부 렌더링 해주세요.
-3. Todo의 상태가 `Working` 이면 위쪽에 위치하고, `Done`이면 아래쪽에 위치하도록 구현합니다.
-4. Layout의 최대 넓이는 1200px, 최소 넓이는 800px로 제한하고, 전체 화면의 가운데로 정렬해주세요.
-5. **컴포넌트 구조는 자유롭게 구현해보세요.**
-    - 반복되는 컴포넌트를 찾아서, 직접 컴포넌트를 분리해보시고, 분리한 컴포넌트를 `README`에 작성합니다.
-
-
+## 폴더 구조
+![image](https://user-images.githubusercontent.com/95006849/206099853-5d57fdc8-145d-4a1d-baa8-f036debbc68b.png)
+<br>
+<br>
 ## Error Log
 1. Todo 추가 시, 제목+내용 input 내용이 list에 나오지 않는 오류 발생
 ![화면 캡처 2022-12-07 102008](https://user-images.githubusercontent.com/95006849/206065033-b48c44e1-4ec9-4560-bb63-3e4bed8b33bc.png)
@@ -39,5 +47,13 @@
 2. 지정된 event type이 발생하면
 3. 지정된 event handler가 실행된다
 
-- 구조 분해 할당
-배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 표현식
+- 구조 분해 할당 : 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 표현식
+<br>
+2. 완료 버튼 클릭 시, 아무일도 일어나지 않는 오류 발생 <br>
+- 조건문 추가하지 않아서 생기는 오류였다. <br>
+
+```javascript
+<button className="done" onClick={() => onToggle(id)}>
+          {check ? <>취소</> : <>완료</>}
+ </button>
+```
