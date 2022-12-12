@@ -1,10 +1,22 @@
 .TodoList {
   list-style: none;
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+
+.TodoList::-webkit-scrollbar {
+  display: none;
 }
 
 .todoBox {
   width: 650px;
-  margin-right: 50px;
+  margin: auto;
   background-color: rgb(162, 208, 249);
   border-radius: 20px;
 }

@@ -3,7 +3,8 @@ import "../css/TodoList.css";
 
 const TodoList = ({ todo, onToggle, onDel, check }) => {
   return (
-    <ul className="TodoList">
+    <div className="TodoList">
+      <h2>{check ? "완료" : "진행 중"}</h2>
       {todo.map(
         (item) =>
           item.check === check && (
@@ -15,7 +16,7 @@ const TodoList = ({ todo, onToggle, onDel, check }) => {
             />
           )
       )}
-    </ul>
+    </div>
   );
 };
 
